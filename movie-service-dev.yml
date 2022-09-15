@@ -6,15 +6,3 @@ info:
     name: ${spring.application.name}
     version: 1.0.0
     description: Movie Microservice
-spring:
-  jpa:
-    hibernate: 
-      ddl-auto: update
-  datasource:
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/movies
-    username: root
-    password: 4603
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  sql:
-    init:
-      data-locations: classpath:movie-service.sql
