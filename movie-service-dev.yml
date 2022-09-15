@@ -15,3 +15,5 @@ spring:
     username: root
     password: 1123
     driver-class-name: com.mysql.cj.jdbc.Driver
+    data: 
+      classpath: movie-service.sql
