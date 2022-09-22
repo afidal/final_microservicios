@@ -39,4 +39,4 @@ info:
   app:
     name: ${spring.application.name}
     version: 1.0.0
-    description: API Gateway
+    description: Gateway Service Final Materia Especialización Backend I
