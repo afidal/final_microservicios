@@ -15,6 +15,10 @@ spring:
     password: guest
     host: localhost
     port: 5672
+ 
+ queue:
+  series:
+    name: Series
 
 info:
   app:
