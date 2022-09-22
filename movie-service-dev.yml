@@ -16,7 +16,7 @@ spring:
   rabbitmq:
     username: guest
     password: guest
-    host: rabbitmq
+    host: localhost
     port: 5672
 
 queue:
