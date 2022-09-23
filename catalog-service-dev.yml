@@ -13,7 +13,9 @@ queue:
     name: Movie
   series:
     name: Series
-    
+
+# FALTA CIRCUITBREAKER
+
 info:
   app:
     name: ${spring.application.name}
