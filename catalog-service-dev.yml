@@ -1,8 +1,21 @@
 server:
   port: 8084
-
+  
+spring:
+  rabbitmq:
+    username: guest
+    password: guest
+    host: localhost
+    port: 5672
+  
+queue:
+  movie:
+    name: Movie
+  series:
+    name: Series
+    
 info:
   app:
     name: ${spring.application.name}
     version: 1.0.0
-    description: Catalog Microservice
+    description: Catalog Service Final Materia Especialización Backend I
