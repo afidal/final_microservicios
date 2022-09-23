@@ -10,9 +10,6 @@ spring:
     username: root
     password: ek434603
     driver-class-name: com.mysql.cj.jdbc.Driver
-  sql:
-    init:
-      data-locations: classpath:movie-service.sql
   rabbitmq:
     username: guest
     password: guest
