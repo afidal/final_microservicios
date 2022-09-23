@@ -7,8 +7,8 @@ spring:
       ddl-auto: create-drop
   datasource:
     url: jdbc:mysql://localhost:3306/movies_db
-    username: root
-    password: ek434603
+    username: user
+    password: pass
     driver-class-name: com.mysql.cj.jdbc.Driver
   rabbitmq:
     username: guest
