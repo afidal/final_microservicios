@@ -19,45 +19,6 @@ queue:
   series:
     name: Series
 
-resilience4j:
-  circuitbreaker:
-    instances:
-      movies:
-        slidingWindowType: COUNT_BASED
-        slidingWindowSize: 5
-        failureRateThreshold: 50
-        automaticTransitionFromOpenToHalfOpenEnabled: true
-        waitDurationInOpenState: 15000
-        permittedNumberOfCallsInHalfOpenState: 3
-        registerHealthIndicator: true
-        allowHealthIndicatorToFail: false
-      series: 
-        slidingWindowType: COUNT_BASED
-        slidingWindowSize: 5
-        failureRateThreshold: 50
-        automaticTransitionFromOpenToHalfOpenEnabled: true
-        waitDurationInOpenState: 15000
-        permittedNumberOfCallsInHalfOpenState: 3
-        registerHealthIndicator: true
-        allowHealthIndicatorToFail: false
-        
-  #retry:
-    #instances:
-      #movies:
-        #maxAttempts: 3
-        #waitDuration: 1000
-        #retryExceptions[0]: feign.FeignException$InternalServerError
-      #series:
-        #maxAttempts: 3
-        #waitDuration: 1000
-        #retryExceptions[0]: feign.FeignException$InternalServerError
-     
-
-management:
-  health:
-    circuitbreakers:
-      enabled: true
-
 info:
   app:
     name: ${spring.application.name}
