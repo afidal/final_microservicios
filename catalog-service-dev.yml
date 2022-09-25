@@ -2,6 +2,11 @@ server:
   port: 8084
   
 spring:
+  data:
+      mongodb:
+        database: catalog_db
+        port: 27017
+        host: localhost
   rabbitmq:
     username: guest
     password: guest
